@@ -176,7 +176,7 @@
     position: relative;
     border-radius: 8px;
     bottom: 8px;
-    left: 3px;
+    left: 4px;
 }
 #header #utilitarios #box2 #background:hover{
     background-color: hsl(199, 100%, 70%);
@@ -191,7 +191,8 @@
     width: 95px;
     position: relative;
     font-family: 'Inter', sans-serif;
-    left: 9px;
+    font-size: 15px;
+    left:11px;
     top: 7px;
 }
 #header #utilitarios #box2 #perfil{
@@ -225,7 +226,8 @@
     height: 2500px;
     width: 1903px;
     background-color: hsl(0, 0%, 7%);
-    background: linear-gradient(hsl(0, 0%, 7%),hsl(0, 67%, 18%));
+    z-index: -1;
+    /* background: linear-gradient(hsl(0, 0%, 7%),hsl(0, 67%, 18%)); */
 }
 #principal #barra-de-pesquisa{
     height: 90px;
@@ -252,6 +254,7 @@
     background-color: hsl(0, 0%, 13%);
     border: none;
     color: hsl(0, 0%, 100%);
+    
 }
 #principal #barra-de-pesquisa #container #box3 #conjunto{
     position: relative;
@@ -280,7 +283,7 @@
     color: hsl(240, 2%, 67%);
     position: relative;
     top: 35px;
-    left :880px;
+    left :865px;
     height: 20px;
 }
 #principal #barra-de-pesquisa #container #box4:hover{
@@ -290,4 +293,28 @@
 .fa-solid.fa-magnifying-glass.fa-xs{
     position: relative;
     left: 2px;
+}
+#principal #carrossel-area{
+    width: 1427px;
+    height: 640px;
+    position: relative;
+    left: 238px;
+    background-color: rgb(2, 250, 167);
+}
+#principal #carrossel-area #slide{
+    height: 640px;
+    width: 1130px;
+    background-color: brown;
+}
+#principal #carrossel-area .container{
+    display: flex;
+    border: yellow 2px solid;
+    position: relative;
+    left: 1171px;
+    bottom: 640px;
+    height: 640px;
+    width: 256px;    
+}
+#principal #carrossel-area .container #box5{
+    
 }
