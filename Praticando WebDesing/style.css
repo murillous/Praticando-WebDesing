@@ -1,0 +1,293 @@
+*{
+    margin: 0px;
+    box-sizing: border-box;
+}
+#header{
+    height: 72px;
+    width: 1903px;
+    background-color: hsl(240, 8%, 10%);
+    position: relative;
+}
+#header #imagem-logo img{
+    position: relative;
+    left: 27px;
+    top: 21px;
+    height: 30px;
+    width: 26px;
+}
+#header .fa-solid.fa-chevron-down{
+    position: relative;
+    left: 68px;
+    bottom: 8px;
+    color: hsl(240, 2%, 65%);
+}
+#header .fa-solid.fa-chevron-down:hover{
+    animation:crescer .3s forwards;
+}
+@keyframes crescer {
+    to{transform: scale(1.05);
+    bottom: 6px;
+    color: hsl(0, 0%, 100%);}
+}
+#header #barra{
+    border-radius: 5px;
+    width: 2px;
+    height: 40px;
+    background-color: hsl(240, 4%, 20%);
+    position: relative;
+    left: 104px;
+    bottom: 37px;
+}
+#header #imagem-store img{
+    position: relative;
+    left: 110px;
+    bottom: 75px;
+    height: 35px;
+    width: 100px;
+}
+#header #informações{
+    height: 30px;
+    width: 400px;
+    display: flex;
+    font-family: 'Inter', sans-serif;
+    color: hsl(240, 2%, 67%);
+    position: relative;
+    left: 203px;
+    bottom: 109px;
+}
+#header #informações #box1{
+    padding: 5px 16px;
+}
+#header #informações #box1:hover{
+    color: hsl(0, 0%, 100%);
+    transition: 0.2s;
+    background-color: hsla(0, 2%, 68%, 0.192);
+    border-radius: 7px;
+}
+#header #utilitarios{
+    display: flex;
+    position: relative;
+    column-gap: 20px;
+    float: inline-end;
+    right: 27px;
+    bottom: 133px;
+}
+#header #utilitarios #box2{
+    height: 0px;
+    z-index: 1;
+}
+#header #utilitarios #box2:hover{
+    height: 58px;
+}
+#header #utilitarios #box2 .fa-solid.fa-globe.fa-2sm{
+    color: hsl(240, 2%, 67%);
+}
+#header #utilitarios #box2 .fa-solid.fa-globe.fa-2sm:hover{
+    color: hsl(0, 0%, 100%);
+    transition: 0.3s;
+}
+#header #utilitarios #box2 #idiomas{
+    height: 575px;
+    width: 170px;
+    background-color: #303034;
+    position: absolute;
+    right:45px;
+    top: 55px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    font-size: small;
+    padding: 0;
+    display: none;
+    box-shadow: rgba(0, 0, 0, 0.571) 1px 9px 9px;
+}
+#header #utilitarios #box2:hover #idiomas{
+    display: block;
+    transition: 0.3s;
+}
+#header #utilitarios #box2 #idiomas li{
+    display: block;
+    width: 150px;
+    position: relative;
+    left: 10px;
+    top: 20px;
+}
+#header #utilitarios #box2 #idiomas li a{
+    text-decoration: none;
+    color: hsl(240, 2%, 67%);
+    display: block;
+    padding: 8px;
+    border-radius: 8px;
+    font-family: 'Inter', sans-serif;
+    font-size: 14px;
+}
+#header #utilitarios #box2 #idiomas li:hover a{
+    color: hsl(0, 0%, 100%);
+    transition: .3s;
+    background-color: #aaaaae79;
+}
+#header #utilitarios #box2 #usuario{
+    height: 302px;
+    width: 170px;
+    background-color: #303034;
+    position: absolute;
+    left:-20px;
+    top: 63px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    font-size: small;
+    padding: 0;
+    display: none;
+    box-shadow: rgba(0, 0, 0, 0.571) 1px 9px 9px;
+}
+#header #utilitarios #box2:hover #usuario{
+    display: block;
+    transition: 0.3s;
+}
+#header #utilitarios #box2 #usuario li{
+    display: block;
+    width: 150px;
+    position: relative;
+    left: 10px;
+    top: 20px;
+}
+#header #utilitarios #box2 #usuario li a{
+    text-decoration: none;
+    color: hsl(240, 2%, 67%);
+    display: block;
+    padding: 8px;
+    border-radius: 8px;
+    font-family: 'Inter', sans-serif;
+    font-size: 14px;
+}
+#header #utilitarios #box2 #usuario li:hover a{
+    color: hsl(0, 0%, 100%);
+    transition: .3s;
+    background-color: #aaaaae79;
+}
+#header #utilitarios #box2{
+    cursor: pointer;
+}
+#header #utilitarios #box2 #background{
+    background-color: hsl(199, 100%, 57%);
+    position: relative;
+    border-radius: 8px;
+    bottom: 8px;
+    left: 3px;
+}
+#header #utilitarios #box2 #background:hover{
+    background-color: hsl(199, 100%, 70%);
+    position: relative;
+    border-radius: 8px;
+    bottom: 8px;
+    left: 3px;
+    transition: .3s;
+}
+#header #utilitarios #box2 #background #download {
+    height: 32px;
+    width: 95px;
+    position: relative;
+    font-family: 'Inter', sans-serif;
+    left: 9px;
+    top: 7px;
+}
+#header #utilitarios #box2 #perfil{
+    position: relative;
+    height: 33px;
+    width: 33px;
+    bottom: 8px;
+    right: 1px;
+    border-radius: 99px;
+}
+#header #utilitarios #perfil:hover .fa-solid.fa-user.fa-lg{
+    color: hsl(0, 0%, 100%);
+    transition: 0.3s;
+}
+#header #utilitarios #perfil .fa-solid.fa-user.fa-lg{
+    color: #AAAAAE;
+    position: relative;
+    left: 8px;
+    top: 8px;
+    z-index: 1;
+}
+#header #utilitarios #perfil #circulo{
+    background-color: #303034;
+    width: 33px;
+    height: 33px;
+    border-radius:99px;
+    position: relative;
+    bottom: 18px;
+}
+#principal{
+    height: 2500px;
+    width: 1903px;
+    background-color: hsl(0, 0%, 7%);
+    background: linear-gradient(hsl(0, 0%, 7%),hsl(0, 67%, 18%));
+}
+#principal #barra-de-pesquisa{
+    height: 90px;
+    width: 1903px;
+    background-color: hsl(0, 0%, 7%);
+    position:sticky;
+    top: 0px;
+}
+#principal #barra-de-pesquisa #container{
+    display: flex;
+    column-gap: 30px;
+}
+#principal #barra-de-pesquisa #container #box3{
+    position: relative;
+    left: 238px;
+    top: 35px;
+    height: 20px;
+}
+#principal #barra-de-pesquisa #container #box3 #procurar{
+    border-radius:0px 99px 99px 0px;
+    height: 40px;
+    width: 230px;
+    font-family: 'Inter', sans-serif;
+    background-color: hsl(0, 0%, 13%);
+    border: none;
+    color: hsl(0, 0%, 100%);
+}
+#principal #barra-de-pesquisa #container #box3 #conjunto{
+    position: relative;
+    bottom: 50px;
+}
+#principal #barra-de-pesquisa #container #box3 #conjunto #fundo{
+    height: 40px;
+    width: 25px;
+    background-color: hsl(0, 0%, 13%);
+    position: relative;
+    top: 40px;
+    right: 5px;
+    z-index: -1;
+    border-radius: 99px 0px 0px 99px;
+}
+#principal #barra-de-pesquisa #container #box3{
+    font-family: 'Inter', sans-serif;
+    color: hsl(240, 2%, 67%);
+}
+#principal #barra-de-pesquisa #container #box3:hover{
+    color: hsl(0, 0%, 100%);
+    transition: .3s;
+}
+#principal #barra-de-pesquisa #container #box4{
+    font-family: 'Inter', sans-serif;
+    color: hsl(240, 2%, 67%);
+    position: relative;
+    top: 35px;
+    left :880px;
+    height: 20px;
+}
+#principal #barra-de-pesquisa #container #box4:hover{
+    color:hsl(0,0%,100%);
+    transition: .3s;
+}
+.fa-solid.fa-magnifying-glass.fa-xs{
+    position: relative;
+    left: 2px;
+}
