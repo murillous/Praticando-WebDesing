@@ -7,18 +7,28 @@
     width: 1903px;
     background-color: hsl(240, 8%, 10%);
     position: relative;
+    z-index: 3;
+}
+#teste{
+    height: 72px;
+    width: 1903px;
+    position: relative;
+    top: 4px;
+}
+#header #imagem-logo{
+    width: 0px;
 }
 #header #imagem-logo img{
     position: relative;
     left: 27px;
-    top: 21px;
+    top: 18px;
     height: 30px;
     width: 26px;
 }
 #header .fa-solid.fa-chevron-down{
     position: relative;
     left: 68px;
-    bottom: 8px;
+    bottom: 10px;
     color: hsl(240, 2%, 65%);
 }
 #header .fa-solid.fa-chevron-down:hover{
@@ -36,12 +46,16 @@
     background-color: hsl(240, 4%, 20%);
     position: relative;
     left: 104px;
-    bottom: 37px;
+    bottom: 40px;
+}
+#header #imagem-store{
+    height: 35px;
+    width: 100px;
 }
 #header #imagem-store img{
     position: relative;
     left: 110px;
-    bottom: 75px;
+    bottom: 78px;
     height: 35px;
     width: 100px;
 }
@@ -74,7 +88,7 @@
 }
 #header #utilitarios #box2{
     height: 0px;
-    z-index: 1;
+    z-index: 0;
 }
 #header #utilitarios #box2:hover{
     height: 58px;
@@ -226,7 +240,7 @@
     height: 2500px;
     width: 1903px;
     background-color: hsl(0, 0%, 7%);
-    z-index: -1;
+    z-index: -2;
     /* background: linear-gradient(hsl(0, 0%, 7%),hsl(0, 67%, 18%)); */
 }
 #principal #barra-de-pesquisa{
@@ -235,6 +249,7 @@
     background-color: hsl(0, 0%, 7%);
     position:sticky;
     top: 0px;
+    z-index: 2;
 }
 #principal #barra-de-pesquisa #container{
     display: flex;
@@ -299,7 +314,6 @@
     height: 640px;
     position: relative;
     left: 238px;
-    background-color: rgb(2, 250, 167);
 }
 #principal #carrossel-area #slide{
     height: 640px;
@@ -308,13 +322,41 @@
 }
 #principal #carrossel-area .container{
     display: flex;
-    border: yellow 2px solid;
+    flex-direction: column;
+    justify-content: space-between;
     position: relative;
-    left: 1171px;
+    left: 1170px;
     bottom: 640px;
     height: 640px;
     width: 256px;    
 }
 #principal #carrossel-area .container #box5{
+    height: 105px;
+    width: 256px;
+    border-radius: 20px;
+}
+#principal #carrossel-area .container #box5 #texto-slide-lateral{
+    width: 150px;
+    height: 60px;
+    position: relative;
+    bottom:63px;
+    left: 90px;
+    font-family: 'inter',sans-serif;
+    color: hsl(0, 0%, 100%);
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+}
+#principal #carrossel-area .container #box5:hover{
+    background-color: hsla(240, 2%, 67%, 0.350);
+    transition: .3s;
+}
+#principal #carrossel-area .container #box5 img{
+    height: 80px;
+    width: 60px;
+    border-radius: 5px;
+    position: relative;
+    left:15px;
+    top: 11px;
     
 }
